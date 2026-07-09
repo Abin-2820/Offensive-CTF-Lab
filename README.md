@@ -7,7 +7,7 @@ A collection of penetration testing walkthroughs for VulnHub machines, documenti
 
 ---
 
-## 🧭 Methodology
+## Methodology
 
 Every machine in this repo follows the same five-phase approach:
 
@@ -52,7 +52,10 @@ uname -r   # confirmed vulnerable kernel
 <!-- 📷 Add screenshots here: host discovery, nmap scan, Burp Repeater, web shell, Dirty Pipe root shell -->
 ![host_discovery](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/1-Matrix/Screenshots/1%20-%20Screenshot%202026-07-06%20145019.png)
 ![nmap_scan](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/1-Matrix/Screenshots/3%20-%20Screenshot%202026-07-06%20145823.png)
-![Burp_suite]()
+![Burp_suite](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/1-Matrix/Screenshots/11-%20Screenshot%202026-07-06%20160507.png)
+![Web_Shell](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/1-Matrix/Screenshots/12%20-%20Screenshot%202026-07-06%20160709.png)
+![Dirt_Pipe](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/1-Matrix/Screenshots/18%20-%20Screenshot%202026-07-06%20163040.png)
+
 ---
 
 ## 02 — Jangow: 1.0.1
@@ -70,6 +73,12 @@ chmod 777 shell.sh && ./shell.sh
 ```
 
 <!-- 📷 Add screenshots here: host discovery, nmap scan, command injection, credential discovery, root shell -->
+![host](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/2%20-%20Jangow01/Screenshots/1.png)
+![nmap_scan](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/2%20-%20Jangow01/Screenshots/3-Screenshot%202026-07-06%20211118.png)
+![command_Injection](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/2%20-%20Jangow01/Screenshots/9-Screenshot%202026-07-06%20212028.png)
+![Credential](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/2%20-%20Jangow01/Screenshots/10-Screenshot%202026-07-06%20212125.png)
+![root_shell](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/2%20-%20Jangow01/Screenshots/13-Screenshot%202026-07-06%20223514.png)
+![Flag](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/2%20-%20Jangow01/Screenshots/14-Screenshot%202026-07-07%20170700.png)
 
 ---
 
@@ -93,6 +102,14 @@ su root                # password: Earth
 ```
 
 <!-- 📷 Add screenshots here: vhost discovery, CyberChef XOR decode, admin CLI bypass, ltrace output, root flag -->
+![host](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/3%20-%20Earth/Screenshots/1-Screenshot%202026-07-07%20171639.png)
+![nmap_scan](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/3%20-%20Earth/Screenshots/3-Screenshot%202026-07-07%20172511.png)
+![robot](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/3%20-%20Earth/Screenshots/4-Screenshot%202026-07-07%20200014.png)
+![testing_notes](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/3%20-%20Earth/Screenshots/5-Screenshot%202026-07-07%20203451.png)
+![Shell](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/3%20-%20Earth/Screenshots/8-Screenshot%202026-07-08%20010325.png)
+![shell](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/3%20-%20Earth/Screenshots/9-Screenshot%202026-07-08%20010313.png)
+![Prv_esc](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/3%20-%20Earth/Screenshots/15-Screenshot%202026-07-08%20121325.png)
+![flag](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/3%20-%20Earth/Screenshots/16-Screenshot%202026-07-08%20121424.png)
 
 ---
 
@@ -118,6 +135,14 @@ sudo /usr/bin/pip install $TF
 ```
 
 <!-- 📷 Add screenshots here: wfuzz results, CyberChef Base58 decode, John crack, SSH login, privesc chain -->
+![host](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/4%20-%20Empire_Lup_One/Screenshots/1-Screenshot%202026-07-08%20163802.png)
+![wfuzz](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/4%20-%20Empire_Lup_One/Screenshots/4-Screenshot%202026-07-08%20172122.png)
+![mysecret](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/4%20-%20Empire_Lup_One/Screenshots/5-Screenshot%202026-07-08%20172610.png)
+![john](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/4%20-%20Empire_Lup_One/Screenshots/6-Screenshot%202026-07-08%20205752.png)
+![cracked_pass](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/4%20-%20Empire_Lup_One/Screenshots/7-Screenshot%202026-07-08%20210141.png)
+![SSH_login](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/4%20-%20Empire_Lup_One/Screenshots/8-Screenshot%202026-07-08%20211500.png)
+![prv_esc](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/4%20-%20Empire_Lup_One/Screenshots/12-Screenshot%202026-07-08%20223645.png)
+![root](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/4%20-%20Empire_Lup_One/Screenshots/14-Screenshot%202026-07-08%20224914.png)
 
 ---
 
@@ -147,6 +172,12 @@ su root
 ```
 
 <!-- 📷 Add screenshots here: nmap scan, Brainfuck string + CyberChef decode, enum4linux user, Usermin shell, getcap output, root access -->
+![host](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/5%20-%20Empire_Breakout/Screenshots/1-Screenshot%202026-07-09%20104853.png)
+![Brainfuck](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/5%20-%20Empire_Breakout/Screenshots/5-Screenshot%202026-07-09%20111000.png)
+![userMin](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/5%20-%20Empire_Breakout/Screenshots/7-Screenshot%202026-07-09%20112210.png)
+![Shell](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/5%20-%20Empire_Breakout/Screenshots/9-Screenshot%202026-07-09%20112458.png)
+![prv_esc](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/5%20-%20Empire_Breakout/Screenshots/12-Screenshot%202026-07-09%20113841.png)
+![root](https://github.com/Abin-2820/Offensive-CTF-Lab/blob/main/5%20-%20Empire_Breakout/Screenshots/Screenshot%202026-07-09%20114558.png)
 
 ---
 
